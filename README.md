@@ -1,7 +1,7 @@
 # 🎬 Filmtracker (Public)
 
-**Öffentliche Film-Tracking-App — eigenes Konto anlegen, Filme bewerten, filtern, durchsuchen. Jede Bibliothek ist privat.**
-_Public movie-tracking app — create your own account, rate, filter and search films. Every library is private._
+**Die meisten führen ihre Filme in einer Excel-Liste oder gar nicht. Filmtracker ist eine öffentliche Film-Datenbank mit eigenem Konto — Filme per TMDb-Suche hinzufügen, bewerten, filtern, durchsuchen. Jede Bibliothek ist privat.**
+_Most people track the films they've seen in a spreadsheet, or not at all. Filmtracker is a public movie database with your own account — add films via TMDb search, rate, filter, search. Every library is private._
 
 ![Screenshot](docs/screenshot.png)
 
@@ -11,10 +11,13 @@ _Public movie-tracking app — create your own account, rate, filter and search 
 
 ## 🇩🇪 Deutsch
 
-### Was ist das?
+### Das Problem
+Wer seine gesehenen Filme festhalten will, landet meist bei einer Excel-Liste: Titel raussuchen, Genre und Jahr von Hand eintragen, kein Poster, nichts vernünftig durchsuchbar — und auf dem Handy unbrauchbar.
+
+### Die Lösung
 Die öffentliche Multi-User-Version meines [privaten Filmtrackers](https://github.com/usr1243/filmtracker). Jeder kann sich mit Username + Passwort registrieren und bekommt eine eigene, isolierte Filmbibliothek — Bewertung (Love/Like/Meh/Dislike/Queue), Status, Listen, TMDb-Suche zum Hinzufügen und KI-gestützter Text-Import (Groq extrahiert Titel aus reingepastetem Text).
 
-### Warum eine eigene Account-Version?
+### Warum ein selbst gebautes Login?
 Der private Filmtracker hatte bewusst kein Login (Single-User-Tool). Für die öffentliche Demo brauchte es echte Trennung zwischen Nutzern, ohne einen kompletten Auth-Anbieter wie Supabase/Auth0 reinzuziehen — also selbst gebaut, mit den Bordmitteln der Cloudflare-Workers-Runtime.
 
 ### Wie funktioniert das Login?
@@ -32,10 +35,13 @@ Der private Filmtracker hatte bewusst kein Login (Single-User-Tool). Für die ö
 
 ## 🇬🇧 English
 
-### What is it?
+### The problem
+If you want to keep track of the films you've seen, you usually end up with a spreadsheet: looking up titles, typing in genre and year by hand, no poster, nothing properly searchable — and useless on a phone.
+
+### The solution
 The public multi-user version of my [private Filmtracker](https://github.com/usr1243/filmtracker). Anyone can register with a username and password and gets their own, fully isolated movie library — ratings, watch status, custom lists, TMDb search-to-add, and AI-powered text import (Groq extracts titles from pasted text).
 
-### Why a separate account-based version?
+### Why a self-built login?
 The private Filmtracker deliberately had no login (single-user tool). The public demo needed real separation between users without pulling in a full auth provider like Supabase/Auth0 — so I built it myself using what the Cloudflare Workers runtime already offers.
 
 ### How does the login work?
